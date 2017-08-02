@@ -1,0 +1,36 @@
+{{define "Head"}}<title>List Bookings</title>
+{{end}}
+
+{{define "Main"}}
+    <h4> Bookings</h4>  
+    
+    {{if .Bookings}}
+    <table class="bordered highlight">
+        <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Car Registration Number</th>
+            <th>Car Make</th>
+            <th>Service Date</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{range .Bookings}}
+        <tr>
+            <td>{{ .CustomerName }}</td>
+            <td>{{ .CarRegistrationNumber }}</td>
+            <td>{{ .CarMake }}</td>
+            <td>{{ .ServiceDate }}</td>
+            <td><a href="/booking/{{.ID}}">View</a></td>
+        </tr> 
+        </tbody>
+        {{end}}
+
+    </table>
+    {{else}}
+    <p>No Bookings yet</p>
+    {{end}}
+
+{{end}}
+

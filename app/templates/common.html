@@ -1,0 +1,32 @@
+{{define "Header"}}
+<header>
+  <nav class="light-blue darken-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">GDG Car Service Bookings</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/booking/add_form">Make New Booking</a></li>
+        <li><a href="/bookings/">View Bookings</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+{{end}}
+
+{{define "Footer"}}
+<footer>
+  <h1></h1>
+</footer>
+{{end}}
+
+{{define "Javascript"}}
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('select').material_select();
+  });
+</script>
+
+{{end}}

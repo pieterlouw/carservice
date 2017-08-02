@@ -1,0 +1,32 @@
+{{define "Head"}}<title>Make New Booking</title>
+{{end}}
+
+{{define "Main"}}
+    <h4>Make New Booking</h4>
+
+    <form action="/booking/" method="post" class="submit-post">
+        <dl>
+            <dt><label for="CustomerName" data-error="Please enter a valid name" data-success="Valid">Customer Name</label></dt>
+            <dd><input class="input-field" id="CustomerName" name="CustomerName" placeholder="Customer Name" type="text" size="50" maxlength="50" value="" tabindex="1" class="validate" required><dd>
+            
+            <dt><label for="ContactNumber">Contact Number</label></dt>
+            <dd><input class="input-field" id="ContactNumber" name="ContactNumber" type="text" value="" tabindex="2" placeholder="Enter Contact Number" class="validate" required></dd>
+
+            <dt><label for="CarRegistrationNumber">Registration Number</label></dt>
+            <dd><input class="input-field" id="CarRegistrationNumber" name="CarRegistrationNumber" type="text" value="" tabindex="3" placeholder="Enter Car Registration Number" class="validate" required></dd>
+
+            <dt><label for="CarMake" data-error="Please enter a valid car make" data-success="Valid">Car Make</label></dt>
+            <dd><input class="input-field" id="CarMake" name="CarMake" placeholder="CarMake" type="text" size="50" maxlength="50" value="" tabindex="4" class="validate" required><dd>
+            
+            <dt><label for="CarModel" data-error="Please enter a valid car model" data-success="Valid">Car Model</label></dt>
+            <dd><input class="input-field" id="CarModel" name="CarModel" placeholder="Car Model" type="text" size="50" maxlength="50" value="" tabindex="5" class="validate" required><dd>
+
+            <dt><label for="Odometer" data-error="Please enter a valid odometer" data-success="Valid">Odometer</label></dt>
+            <dd><input class="input-field" id="Odometer" name="Odometer" placeholder="Odometer" type="number" size="10" maxlength="10" value="" tabindex="6" class="validate" required><dd>
+
+            <dt><label for="ServiceDate">Service Date</label></dt>
+            <dd><input type="date" id="ServiceDate" name="ServiceDate" class="datepicker" tabindex="7" class="validate" required></dd>
+        </dl>
+        <button class="btn waves-effect waves-light" type="submit" tabindex="8">Submit</button>
+    </form>
+{{end}}

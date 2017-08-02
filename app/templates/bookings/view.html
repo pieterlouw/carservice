@@ -1,0 +1,26 @@
+{{define "Head"}}<title>View Booking</title>
+{{end}}
+
+{{define "Main"}}
+    {{ if gt (len .Message) 0}}
+        <div class="card-panel teal">
+          <span class="white-text">{{ .Message }}</span>
+        </div>
+    {{end}}
+    {{ if .Booking }}
+        {{with .Booking}}
+            <h4>View Booking</h4>  
+            <table class="bordered">
+                <tbody>
+                    <tr><td><b>Customer Name</b></td><td>{{ .CustomerName }}</td></tr>
+                    <tr><td><b>Contact Number</b></td><td>{{ .ContactNumber }}</td></tr>
+                    <tr><td><b>Car Registration Number</b></td><td>{{ .CarRegistrationNumber }}</td></tr>
+                    <tr><td><b>Car Make</b></td><td>{{ .CarMake }}</td></tr>
+                    <tr><td><b>Car Model</b></td><td>{{ .CarModel }}</td></tr>
+                    <tr><td><b>Odometer</b></td><td>{{ .Odometer }}</td></tr>
+                    <tr><td><b>Service Date</b></td><td>{{ .ServiceDate }}</td></tr>
+                </tbody>
+            </table>      
+        {{end}}
+    {{end}}
+{{end}}
