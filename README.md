@@ -8,9 +8,14 @@ This application uses standard Go, [sqlite](https://sqlite.org/) and [go-sqlite3
 
 The demo is based on insights from the following articles/blogs:
 
-[Go Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1#.kgqzecx34)
-[Google I/O talk: Building Sourcegraph, a large-scale code search & cross-reference engine in Go] (https://about.sourcegraph.com/blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go/)
-[Making a RESTful JSON API in Go](http://thenewstack.io/make-a-restful-json-api-go/)
-[Writing Web Applications (Go Blog)](https://golang.org/doc/articles/wiki/)
-[Using contexts to avoid leaking goroutines](https://rakyll.org/leakingctx/)
-[Domain Driven Design in Go](https://github.com/marcusolsson/goddd)
+- [Go Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1#.kgqzecx34)
+
+- [Google I/O talk: Building Sourcegraph, a large-scale code search & cross-reference engine in Go](https://about.sourcegraph.com/blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go/)
+
+- [Making a RESTful JSON API in Go](http://thenewstack.io/make-a-restful-json-api-go/)
+
+- [Writing Web Applications (Go Blog)](https://golang.org/doc/articles/wiki/)
+
+- [Using contexts to avoid leaking goroutines](https://rakyll.org/leakingctx/)
+
+- [Domain Driven Design in Go](https://github.com/marcusolsson/goddd)
